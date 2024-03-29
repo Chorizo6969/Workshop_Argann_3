@@ -16,18 +16,18 @@ public class Shoot : MonoBehaviour
     /// GameObject which allows spawn point for bullets.
     /// </summary>
     [SerializeField]
-    private GameObject _spawnpoint;
-
-    /// <summary>
-    /// Variable that stores the coroutine
-    /// </summary>
-    private Coroutine _coroutine;
+    private GameObject _spawnPoint;
 
     /// <summary>
     /// Int which allows you to define in the inspector whether the plant produces 1 or 2 peas.
     /// </summary>
     [SerializeField]
     private int _numberShoot = 1;
+
+    /// <summary>
+    /// Variable that stores the coroutine
+    /// </summary>
+    private Coroutine _coroutine;
 
     /// <summary>
     /// Allows you to know the number of zombies in the plant's line of sight.
@@ -65,11 +65,11 @@ public class Shoot : MonoBehaviour
         {
             yield return new WaitForSeconds(2f);
             GameObject newbullet = Instantiate(_bulletPrefab);
-            newbullet.transform.position = _spawnpoint.transform.position;
+            newbullet.transform.position = _spawnPoint.transform.position;
             if (_numberShoot != 2) yield return Cooldown();
             yield return new WaitForSeconds(0.3f);
             GameObject newbullet2 = Instantiate(_bulletPrefab);
-            newbullet2.transform.position = _spawnpoint.transform.position;
+            newbullet2.transform.position = _spawnPoint.transform.position;
         }
     }
 }

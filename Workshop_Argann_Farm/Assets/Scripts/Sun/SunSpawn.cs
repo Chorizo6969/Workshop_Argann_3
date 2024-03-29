@@ -36,7 +36,7 @@ public class SunSpawn : MonoBehaviour
     {
         _manager = FindObjectOfType<SunManager>();
         _script_Score = _manager._scriptScore;
-        _txt_score = _script_Score.Txt_score;
+        _txt_score = _script_Score.TxtScore;
         StartCoroutine(Sunny());
     }
 
@@ -52,8 +52,8 @@ public class SunSpawn : MonoBehaviour
             GameObject new_sun = Instantiate(_sunPrefab);
             new_sun.transform.position = gameObject.transform.position;
             new_sun.AddComponent<Score>();
-            new_sun.GetComponent<Score>().Txt_score = _txt_score;
-            new_sun.GetComponent<SunInteract>().Score_Sun = _script_Score;
+            new_sun.GetComponent<Score>().TxtScore = _txt_score;
+            new_sun.GetComponent<SunInteract>().ScoreSun = _script_Score;
         }
     }
 }

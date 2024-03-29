@@ -30,18 +30,18 @@ public class ZombieManager : MonoBehaviour
     /// <summary>
     /// Boolean which defines if the zombie can move to the left
     /// </summary>
-    internal bool _can_move { get;  set; } = true;
+    internal bool _canMove { get;  set; } = true;
 
     private void Start()
     {
-        _speed = _zombie.Movespeed;
+        _speed = _zombie.MoveSpeed;
         _health = _zombie.Health;
         _skin.sprite = _zombie.Sprite;
     }
 
     private void FixedUpdate()
     {
-        if (!_can_move) return;
+        if (!_canMove) return;
         transform.Translate(Vector3.left * _speed * Time.deltaTime);
     }
 

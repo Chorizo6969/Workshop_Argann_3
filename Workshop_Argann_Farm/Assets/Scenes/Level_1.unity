@@ -341,8 +341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreScript: {fileID: 6237663477980197375}
-  Plants_script: {fileID: 62750628}
-  <Sun_lose>k__BackingField: 100
+  _plantsScript: {fileID: 62750628}
+  <SunLose>k__BackingField: 100
 --- !u!1 &71390457
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,8 +896,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreScript: {fileID: 6237663477980197375}
-  Plants_script: {fileID: 231677955}
-  <Sun_lose>k__BackingField: 50
+  _plantsScript: {fileID: 231677955}
+  <SunLose>k__BackingField: 50
 --- !u!1 &264346985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,8 +1048,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreScript: {fileID: 6237663477980197375}
-  Plants_script: {fileID: 264346990}
-  <Sun_lose>k__BackingField: 25
+  _plantsScript: {fileID: 264346990}
+  <SunLose>k__BackingField: 25
 --- !u!1 &333180238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,8 +1200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreScript: {fileID: 6237663477980197375}
-  Plants_script: {fileID: 333180243}
-  <Sun_lose>k__BackingField: 200
+  _plantsScript: {fileID: 333180243}
+  <SunLose>k__BackingField: 200
 --- !u!1 &357532692
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,8 +3428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreScript: {fileID: 6237663477980197375}
-  Plants_script: {fileID: 1033101699}
-  <Sun_lose>k__BackingField: 125
+  _plantsScript: {fileID: 1033101699}
+  <SunLose>k__BackingField: 125
 --- !u!1 &1121031069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,8 +4244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreScript: {fileID: 6237663477980197375}
-  Plants_script: {fileID: 1377606946}
-  <Sun_lose>k__BackingField: 50
+  _plantsScript: {fileID: 1377606946}
+  <SunLose>k__BackingField: 50
 --- !u!1 &1391534928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,7 +4289,7 @@ GameObject:
   - component: {fileID: 1419750186}
   - component: {fileID: 1419750185}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4488,7 +4488,7 @@ MonoBehaviour:
   - {fileID: 8611996746268671956, guid: 97f3e15664c61c54a84961adc2f90885, type: 3}
   - {fileID: 3851870100224291909, guid: f00011e282c07d1439dac9aa0e5dd95a, type: 3}
   - {fileID: 2493779112615517962, guid: 1ef16a45674ac3e4898a8c974532c8bf, type: 3}
-  _spawn_positions:
+  _spawnPositions:
   - {fileID: 1620588714}
   - {fileID: 977156492}
   - {fileID: 568045172}
@@ -5443,8 +5443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1147b30b36f50814e81a565f2bce2072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Txt_score>k__BackingField: {fileID: 4851776364322710409}
-  <Player_score>k__BackingField: 0
+  <TxtScore>k__BackingField: {fileID: 4851776364322710409}
+  <PlayerScore>k__BackingField: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

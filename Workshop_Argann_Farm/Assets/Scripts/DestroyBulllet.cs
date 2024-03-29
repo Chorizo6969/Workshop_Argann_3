@@ -5,8 +5,12 @@
 /// </summary>
 public class DestroyBulllet : MonoBehaviour
 {
+    /// <summary>
+    /// string which allows you to change the gameObject to destroy.
+    /// </summary>
     [SerializeField]
     private string _layer;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == _layer)

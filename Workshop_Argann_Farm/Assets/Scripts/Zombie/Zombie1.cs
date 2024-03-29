@@ -10,7 +10,7 @@ public class Zombie1 : ScriptableObject
     /// Set the speed of the zombie
     /// </summary>
     [field: SerializeField]
-    public float Movespeed { get; private set; }
+    public float MoveSpeed { get; private set; }
 
     /// <summary>
     /// Set the health of the zombie

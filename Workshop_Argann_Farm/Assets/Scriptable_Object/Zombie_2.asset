@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b013bfe9f198a4c9ddf422e8b49b30, type: 3}
   m_Name: Zombie_2
   m_EditorClassIdentifier: 
-  <Movespeed>k__BackingField: 0.5
+  <MoveSpeed>k__BackingField: 0.5
   <Health>k__BackingField: 10
   <Sprite>k__BackingField: {fileID: 21300000, guid: e93b8e8fac9217f4f9fd6a8b521eee86, type: 3}

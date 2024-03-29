@@ -17,7 +17,7 @@ public class ZombieSpawn : MonoBehaviour
     /// List of different Transform positions to spawn zombies.
     /// </summary>
     [SerializeField]
-    private List<Transform> _spawn_positions;
+    private List<Transform> _spawnPositions;
 
     private void Start()
     {
@@ -33,8 +33,8 @@ public class ZombieSpawn : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(10);
-            int random_pos = Random.Range(0, _spawn_positions.Count);
-            Transform spawnPos = _spawn_positions[random_pos];
+            int random_pos = Random.Range(0, _spawnPositions.Count);
+            Transform spawnPos = _spawnPositions[random_pos];
             int random_zombie = Random.Range(0, _zombiePrefab.Count);
             GameObject zombiePos = _zombiePrefab[random_zombie];
             GameObject newzombie = Instantiate(zombiePos);

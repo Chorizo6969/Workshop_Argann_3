@@ -16,13 +16,13 @@ public class Substract : MonoBehaviour, IPointerUpHandler
     /// Links to the Plants script.
     /// </summary>
     [SerializeField]
-    private Plants Plants_script;
+    private Plants _plantsScript;
 
     /// <summary>
     /// Int which defines the cost of the plant
     /// </summary>
     [field : SerializeField]
-    public int Sun_lose { get; set; }
+    public int SunLose { get; set; }
 
     /// <summary>
     /// Function that removes suns then changes the display of the player's score.
@@ -30,16 +30,21 @@ public class Substract : MonoBehaviour, IPointerUpHandler
     public void OnPointerUp(PointerEventData eventData)
     {
         {
-            if (_scoreScript.Player_score < Sun_lose)
-            {
-                Plants_script.CanPlants = false;
-            }
-            else
-            {
-                Plants_script.CanPlants = true;
-                _scoreScript.Player_score -= Sun_lose;
-                _scoreScript.Txt_score.text = _scoreScript.Player_score.ToString();
-            }
+            if (!_plantsScript.CanPlants) return;
+            _scoreScript.PlayerScore -= SunLose;
+            _scoreScript.TxtScore.text = _scoreScript.PlayerScore.ToString();
+        }
+    }
+
+    private void Update()
+    {
+        if (_scoreScript.PlayerScore < SunLose)
+        {
+            _plantsScript.CanPlants = false;
+        }
+        else
+        {
+            _plantsScript.CanPlants = true;
         }
     }
 }

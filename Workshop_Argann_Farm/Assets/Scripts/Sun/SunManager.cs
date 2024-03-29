@@ -58,8 +58,8 @@ public class SunManager : MonoBehaviour
             GameObject new_sun = Instantiate(_sun);
             new_sun.transform.position = spawnPos.position;
             new_sun.AddComponent<Score>();
-            new_sun.GetComponent<Score>().Txt_score = _txt_score;
-            new_sun.GetComponent<SunInteract>().Score_Sun = _scriptScore;
+            new_sun.GetComponent<Score>().TxtScore = _txt_score;
+            new_sun.GetComponent<SunInteract>().ScoreSun = _scriptScore;
         }
     }
 }

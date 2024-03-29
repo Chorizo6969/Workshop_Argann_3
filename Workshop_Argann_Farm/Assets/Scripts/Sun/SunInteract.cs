@@ -9,7 +9,7 @@ public class SunInteract : MonoBehaviour
     /// Links to the Score script.
     /// </summary>
     [field :SerializeField]
-    public Score Score_Sun { get; set; }
+    public Score ScoreSun { get; set; }
 
     private void Update()
     {
@@ -23,7 +23,7 @@ public class SunInteract : MonoBehaviour
                 GameObject hitObject = hit.collider.gameObject;
                 if (hitObject.CompareTag("Soleil"))
                 {
-                    Score_Sun.CollectSun(hitObject);
+                    ScoreSun.CollectSun(hitObject);
                 }
             }
         }

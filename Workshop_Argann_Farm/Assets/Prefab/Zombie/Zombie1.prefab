@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2646e5ec294cf746a0fb2c8b0350565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _zombie_move: {fileID: 1808402858094108465}
+  _zombieMove: {fileID: 1808402858094108465}
 --- !u!111 &1719193479183462061
 Animation:
   m_ObjectHideFlags: 0

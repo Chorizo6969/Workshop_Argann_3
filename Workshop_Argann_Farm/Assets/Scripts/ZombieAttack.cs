@@ -10,7 +10,7 @@ public class ZombieAttack : MonoBehaviour
     /// Links to th scripts ZombieManager
     /// </summary>
     [SerializeField]
-    private ZombieManager _zombie_move; // boolean which allows the zombie to move, if false then it no longer moves
+    private ZombieManager _zombieMove; // boolean which allows the zombie to move, if false then it no longer moves
 
     /// <summary>
     /// Collect the plant that the zombie touches
@@ -36,13 +36,16 @@ public class ZombieAttack : MonoBehaviour
     /// <returns> Return a new WaitForSeconds (1).</returns>
     IEnumerator Attack()
     {
-        _zombie_move._can_move = false;
+        _zombieMove._canMove = false;
         while (_pvPlants > 0)
         {
             yield return new WaitForSeconds (1);
             _pvPlants -= 2;
-            _plants.GetComponent<EntityLife>().Life = _pvPlants;
+            if (_plants != null)
+            {
+                _plants.GetComponent<EntityLife>().Life = _pvPlants;
+            }
         }
-        _zombie_move._can_move = true;
+        _zombieMove._canMove = true;
     }
 }

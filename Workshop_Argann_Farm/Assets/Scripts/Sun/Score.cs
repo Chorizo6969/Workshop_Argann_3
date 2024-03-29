@@ -1,9 +1,8 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 /// <summary>
-/// Script that updates the text that displays the Player_score.
+/// Script that updates the text that displays the PlayerScore.
 /// </summary>
 public class Score : MonoBehaviour
 {
@@ -11,15 +10,13 @@ public class Score : MonoBehaviour
     /// Text that displays the number of suns the player has.
     /// </summary>
     [field: SerializeField]
-    public TextMeshProUGUI Txt_score { get; set; }
+    public TextMeshProUGUI TxtScore { get; set; }
 
     /// <summary>
     /// Int that stores the number of suns the player has.
     /// </summary>
     [field: SerializeField]
-    public int Player_score { get; set; }
-
-    public event Action<int> OnScoreChanged;
+    public int PlayerScore { get; set; }
 
     /// <summary>
     /// Function that is activated when you click on a sun
@@ -27,9 +24,8 @@ public class Score : MonoBehaviour
     /// <param name="sun"> Gameobject retrieved by raycast in the script Sun_interact</param>
     public void CollectSun(GameObject sun)
     {
-        Player_score += 50;
-        OnScoreChanged?.Invoke(Player_score);
-        Txt_score.text = Player_score.ToString();
+        PlayerScore += 50;
+        TxtScore.text = PlayerScore.ToString();
         Destroy(sun);
     }
 }

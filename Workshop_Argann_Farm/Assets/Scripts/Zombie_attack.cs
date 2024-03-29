@@ -6,11 +6,20 @@ using UnityEngine;
 /// </summary>
 public class Zombie_attack : MonoBehaviour
 {
+    /// <summary>
+    /// Links to th scripts Zombie_Manager
+    /// </summary>
     [SerializeField]
     private Zombie_Manager _zombie_move; // boolean which allows the zombie to move, if false then it no longer moves
 
+    /// <summary>
+    /// Collect the plant that the zombie touches
+    /// </summary>
     private GameObject _plants;
 
+    /// <summary>
+    /// Recovers the number of HP the plant has
+    /// </summary>
     private int _pvPlants;
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -5,6 +5,9 @@
 /// </summary>
 public class Entity_life : MonoBehaviour
 {
+    /// <summary>
+    /// Int which defines the number of HP a plant has.
+    /// </summary>
     [field: SerializeField]
     public int Life { get; set; }
 

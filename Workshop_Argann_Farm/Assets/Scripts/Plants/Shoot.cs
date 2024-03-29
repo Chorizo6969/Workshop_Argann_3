@@ -6,17 +6,32 @@ using UnityEngine;
 /// </summary>
 public class Shoot : MonoBehaviour
 {
+    /// <summary>
+    /// Prefab of the gameObject Bullet.
+    /// </summary>
     [SerializeField]
     private GameObject _bulletPrefab;
+
+    /// <summary>
+    /// GameObject which allows spawn point for bullets.
+    /// </summary>
     [SerializeField]
     private GameObject _spawnpoint;
 
-    // Variable that stores the coroutine
+    /// <summary>
+    /// Variable that stores the coroutine
+    /// </summary>
     private Coroutine _coroutine;
 
-    // Variable which allows you to define in the inspector whether the plant produces 1 or 2 peas.
+    /// <summary>
+    /// Int which allows you to define in the inspector whether the plant produces 1 or 2 peas.
+    /// </summary>
     [SerializeField]
     private int _numberShoot = 1;
+
+    /// <summary>
+    /// Allows you to know the number of zombies in the plant's line of sight.
+    /// </summary>
     private int _zombiesInRange;
 
     private void OnTriggerEnter2D(Collider2D collision)

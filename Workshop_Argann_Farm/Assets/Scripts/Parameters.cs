@@ -6,8 +6,15 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class Parameters : MonoBehaviour
 {
+    /// <summary>
+    /// Variable that stores the audioSource of the scene.
+    /// </summary>
     [SerializeField]
     private AudioSource _audioSource;
+
+    /// <summary>
+    /// Variable that stores the sound's On Button.
+    /// </summary>
     [SerializeField]
     private GameObject _on;
 

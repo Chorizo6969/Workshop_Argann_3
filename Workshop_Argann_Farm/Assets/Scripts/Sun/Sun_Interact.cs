@@ -5,12 +5,15 @@
 /// </summary>
 public class Sun_Interact : MonoBehaviour
 {
+    /// <summary>
+    /// Links to the Score script.
+    /// </summary>
     [field :SerializeField]
     public Score Score_Sun { get; set; }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // Clic gauche
+        if (Input.GetMouseButtonDown(0))
         {
             Vector2 clickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(clickPosition, Vector2.zero);
@@ -18,7 +21,7 @@ public class Sun_Interact : MonoBehaviour
             if (hit.collider != null)
             {
                 GameObject hitObject = hit.collider.gameObject;
-                if (hitObject.CompareTag("Soleil")) // Si le tag est soleil je lance la fonction pour le détruire
+                if (hitObject.CompareTag("Soleil"))
                 {
                     Score_Sun.CollectSun(hitObject);
                 }

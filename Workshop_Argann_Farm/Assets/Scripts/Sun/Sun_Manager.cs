@@ -8,18 +8,36 @@ using UnityEngine;
 /// </summary>
 public class Sun_Manager : MonoBehaviour
 {
-
+    /// <summary>
+    /// List of positions where the sun can appear.
+    /// </summary>
     [SerializeField]
     private List<Transform> _spawn_positions;
+
+    /// <summary>
+    /// Prefab of the gameObject Sun
+    /// </summary>
     [SerializeField]
     private GameObject _sun;
+
+    /// <summary>
+    /// Text that allows the instantiated sun to recover the score.
+    /// </summary>
     [SerializeField]
     private TextMeshProUGUI _txt_score;
+
+    /// <summary>
+    /// Links to the Score script.
+    /// </summary>
     [field : SerializeField]
     public Score _scriptScore {  get; set; }
-    //Take the Player_score and give to the instance
+
+    /// <summary>
+    /// Links to the Sun script.
+    /// </summary>
     [SerializeField]
     private Sun _sunscript;
+
 
     private void Start()
     {

@@ -5,14 +5,31 @@
 /// </summary>
 public class Zombie_Manager : MonoBehaviour
 {
+    /// <summary>
+    /// Link to Scriptable Object Zombie
+    /// </summary>
     [SerializeField]
     private Zombie_1 _zombie;
 
+    /// <summary>
+    /// SpriteRenderer of the gameObject carrying the script in order to change its appearance
+    /// </summary>
     [SerializeField]
     private SpriteRenderer _skin;
 
+    /// <summary>
+    /// Float which defines the speed of zombies
+    /// </summary>
     private float _speed;
+
+    /// <summary>
+    /// Int which defines the zombie's health
+    /// </summary>
     private int _health;
+
+    /// <summary>
+    /// Boolean which defines if the zombie can move to the left
+    /// </summary>
     internal bool _can_move { get;  set; } = true;
 
     private void Start()

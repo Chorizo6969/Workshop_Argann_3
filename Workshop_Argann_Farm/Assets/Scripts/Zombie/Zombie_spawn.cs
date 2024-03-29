@@ -7,8 +7,15 @@ using UnityEngine;
 /// </summary>
 public class Zombie_spawn : MonoBehaviour
 {
+    /// <summary>
+    /// List of different zombie prefabs.
+    /// </summary>
     [SerializeField]
     private List<GameObject> _zombiePrefab;
+
+    /// <summary>
+    /// List of different Transform positions to spawn zombies.
+    /// </summary>
     [SerializeField]
     private List<Transform> _spawn_positions;
 

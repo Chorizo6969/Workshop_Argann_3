@@ -3,7 +3,7 @@
 /// <summary>
 /// Emergency script that allows you to destroy plant projectiles if they go too far
 /// </summary>
-public class Destroy_bulllet : MonoBehaviour
+public class DestroyBulllet : MonoBehaviour
 {
     [SerializeField]
     private string _layer;

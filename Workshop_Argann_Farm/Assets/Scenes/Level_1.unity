@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48272991117376e42830b0090d6aa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <can_plants>k__BackingField: 0
+  <CanPlants>k__BackingField: 0
   _plantPrefab: {fileID: 7139433408270670347, guid: 7dae63c6414b68f4298149ab445459fd, type: 3}
 --- !u!114 &62750629
 MonoBehaviour:
@@ -590,8 +590,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1318400337}
-        m_TargetAssemblyTypeName: Parameters, Assembly-CSharp
+      - m_Target: {fileID: 357532694}
+        m_TargetAssemblyTypeName: RestartButton, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48272991117376e42830b0090d6aa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <can_plants>k__BackingField: 0
+  <CanPlants>k__BackingField: 0
   _plantPrefab: {fileID: 6161267473636651321, guid: 5c08587f677e1594899137b030b25693, type: 3}
 --- !u!114 &231677956
 MonoBehaviour:
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48272991117376e42830b0090d6aa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <can_plants>k__BackingField: 0
+  <CanPlants>k__BackingField: 0
   _plantPrefab: {fileID: 5932524407468521303, guid: a31e0e65946321b4da9b81f46c7df33c, type: 3}
 --- !u!114 &264346991
 MonoBehaviour:
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48272991117376e42830b0090d6aa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <can_plants>k__BackingField: 0
+  <CanPlants>k__BackingField: 0
   _plantPrefab: {fileID: 50503210448448807, guid: 2b991df6646a9614aa364d9ca1d9c3bd, type: 3}
 --- !u!114 &333180244
 MonoBehaviour:
@@ -1202,6 +1202,50 @@ MonoBehaviour:
   _scoreScript: {fileID: 6237663477980197375}
   Plants_script: {fileID: 333180243}
   <Sun_lose>k__BackingField: 200
+--- !u!1 &357532692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357532693}
+  - component: {fileID: 357532694}
+  m_Layer: 0
+  m_Name: RestartManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357532693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357532692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1879492710}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &357532694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357532692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ded7859168d50f40a6cd5da72c72e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &390882901
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,7 +3413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48272991117376e42830b0090d6aa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <can_plants>k__BackingField: 0
+  <CanPlants>k__BackingField: 0
   _plantPrefab: {fileID: 346298584172925955, guid: 99d59cf2018ba6846898e59aa30cd155, type: 3}
 --- !u!114 &1033101700
 MonoBehaviour:
@@ -3775,7 +3819,7 @@ GameObject:
   - component: {fileID: 1318400336}
   - component: {fileID: 1318400337}
   m_Layer: 0
-  m_Name: Parameters
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4185,7 +4229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48272991117376e42830b0090d6aa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <can_plants>k__BackingField: 0
+  <CanPlants>k__BackingField: 0
   _plantPrefab: {fileID: 1327664757273191871, guid: f4b27427443d0874b91d9993be784a22, type: 3}
 --- !u!114 &1377606947
 MonoBehaviour:
@@ -4821,6 +4865,7 @@ Transform:
   m_Children:
   - {fileID: 1123573243}
   - {fileID: 1318400336}
+  - {fileID: 357532693}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1903088512

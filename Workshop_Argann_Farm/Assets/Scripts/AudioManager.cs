@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Script that allows you to control the game parameters. It manages the sound and the restart button.
 /// </summary>
-public class Parameters : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
     /// <summary>
     /// Variable that stores the audioSource of the scene.
@@ -17,14 +16,6 @@ public class Parameters : MonoBehaviour
     /// </summary>
     [SerializeField]
     private GameObject _on;
-
-    /// <summary>
-    /// Function which restarts the "Level_1" scene
-    /// </summary>
-    public void Restart()
-    {
-        SceneManager.LoadScene("Level_1");
-    }
 
     /// <summary>
     /// Function that mutes game sound.

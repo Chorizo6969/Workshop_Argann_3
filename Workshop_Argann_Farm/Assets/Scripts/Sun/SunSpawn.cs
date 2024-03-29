@@ -54,6 +54,7 @@ public class SunSpawn : MonoBehaviour
             new_sun.AddComponent<Score>();
             new_sun.GetComponent<Score>().TxtScore = _txt_score;
             new_sun.GetComponent<SunInteract>().ScoreSun = _script_Score;
+            new_sun.GetComponent<Sun>().enabled = false;
         }
     }
 }

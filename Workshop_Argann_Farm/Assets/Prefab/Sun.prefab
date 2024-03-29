@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7111704971021780518}
   - component: {fileID: 17876198431063017}
   - component: {fileID: 5211492125728395778}
+  - component: {fileID: 1925329402414992157}
   m_Layer: 6
   m_Name: Sun
   m_TagString: Soleil
@@ -184,4 +185,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3c97a0367cc4b429729803265cd80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Score_Sun>k__BackingField: {fileID: 0}
+  <ScoreSun>k__BackingField: {fileID: 0}
+--- !u!114 &1925329402414992157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856510383598620313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40565c1b9d71455489c003d882f72500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

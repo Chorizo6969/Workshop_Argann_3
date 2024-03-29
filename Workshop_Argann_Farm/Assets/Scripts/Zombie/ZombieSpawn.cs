@@ -30,6 +30,8 @@ public class ZombieSpawn : MonoBehaviour
     /// <returns> Return a new WaitForSeconds (10).</returns>
     IEnumerator Zombie()
     {
+        //Time for first zombie spawn
+        yield return new WaitForSeconds(5);
         while (true)
         {
             yield return new WaitForSeconds(10);

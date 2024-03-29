@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8474972683356368591}
   - component: {fileID: 881225832938094872}
   - component: {fileID: 8285924645369088513}
+  - component: {fileID: 1615087359782178331}
   - component: {fileID: 1719193479183462061}
   m_Layer: 9
   m_Name: Zombie1
@@ -103,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _zombie: {fileID: 11400000, guid: b0089fac5a206c5458bcfb8d13209522, type: 2}
   _skin: {fileID: 8007016623528621658}
+  _zombAnim: {fileID: 1615087359782178331}
 --- !u!61 &8474972683356368591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +137,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.051315784, y: -0.40425515}
+  m_Offset: {x: -0.051315784, y: -0.25153422}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -146,7 +148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.813262, y: 3.5910754}
+  m_Size: {x: 1.813262, y: 3.2856336}
   m_EdgeRadius: 0
 --- !u!95 &881225832938094872
 Animator:
@@ -182,6 +184,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _zombieMove: {fileID: 1808402858094108465}
+  _zombAnim: {fileID: 1615087359782178331}
+--- !u!114 &1615087359782178331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611996746268671956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6529938c82a3847b8b00f382d24dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _zombieAnimator: {fileID: 881225832938094872}
+  _zombieManager: {fileID: 1808402858094108465}
 --- !u!111 &1719193479183462061
 Animation:
   m_ObjectHideFlags: 0

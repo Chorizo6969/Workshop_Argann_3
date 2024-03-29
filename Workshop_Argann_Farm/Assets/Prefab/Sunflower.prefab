@@ -417,7 +417,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.33656073, y: -0.4434067}
+  m_Offset: {x: 0.20994282, y: -0.50128883}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -428,7 +428,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6133564, y: 2.6560948}
+  m_Size: {x: 2.3601203, y: 1.6576225}
   m_EdgeRadius: 0
 --- !u!114 &8283363412656548574
 MonoBehaviour:
@@ -456,7 +456,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sunPrefab: {fileID: 2856510383598620313, guid: c73be950f90b4b341ae490cdd3677f2f, type: 3}
-  _scriptScore: {fileID: 0}
+  _manager: {fileID: 0}
+  _script_Score: {fileID: 0}
+  _txt_score: {fileID: 0}
 --- !u!1 &7212305840521150020
 GameObject:
   m_ObjectHideFlags: 0

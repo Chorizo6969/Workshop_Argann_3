@@ -17,6 +17,9 @@ public class ZombieManager : MonoBehaviour
     [SerializeField]
     private SpriteRenderer _skin;
 
+    [SerializeField]
+    private ZombieAnimator _zombAnim;
+
     /// <summary>
     /// Float which defines the speed of zombies
     /// </summary>
@@ -53,7 +56,7 @@ public class ZombieManager : MonoBehaviour
             _health--;
             if (_health <= 0)
             {
-                Destroy(gameObject);
+                _zombAnim.OnDeath();
             }
         }
     }

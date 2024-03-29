@@ -33,6 +33,16 @@ public class Plants : MonoBehaviour, IPointerDownHandler, IPointerUpHandler  // 
     /// </summary>
     private Vector2 _spawnPosition;
 
+    /// <summary>
+    /// Variable to store the plant boxCollider
+    /// </summary>
+    private BoxCollider2D _plantsCollider;
+
+    private void Start()
+    {
+        _plantsCollider = _plantPrefab.GetComponent<BoxCollider2D>();
+    }
+
     private void Update()
     {
         if (!_isDragging) return;
@@ -43,14 +53,17 @@ public class Plants : MonoBehaviour, IPointerDownHandler, IPointerUpHandler  // 
     public void OnPointerDown(PointerEventData eventData)
     {
         if (!CanPlants) return;
-            _isDragging = true;
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            _spawnPosition = mousePosition;
-            _draggedObject = Instantiate(_plantPrefab, _spawnPosition, Quaternion.identity);
+        _isDragging = true;
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        _spawnPosition = mousePosition;
+        _draggedObject = Instantiate(_plantPrefab, _spawnPosition, Quaternion.identity);
+        _plantsCollider = _draggedObject.GetComponent<BoxCollider2D>();
+        _plantsCollider.enabled = false;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         _isDragging = false;
+        _plantsCollider.enabled = true;
     }
 }

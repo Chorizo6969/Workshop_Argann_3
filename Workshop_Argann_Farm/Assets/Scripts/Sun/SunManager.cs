@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Script that manages the _speed of appearance of suns in the garden before instantiating it.
 /// </summary>
-public class Sun_Manager : MonoBehaviour
+public class SunManager : MonoBehaviour
 {
     /// <summary>
     /// List of positions where the sun can appear.
@@ -59,7 +59,7 @@ public class Sun_Manager : MonoBehaviour
             new_sun.transform.position = spawnPos.position;
             new_sun.AddComponent<Score>();
             new_sun.GetComponent<Score>().Txt_score = _txt_score;
-            new_sun.GetComponent<Sun_Interact>().Score_Sun = _scriptScore;
+            new_sun.GetComponent<SunInteract>().Score_Sun = _scriptScore;
         }
     }
 }

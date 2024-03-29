@@ -32,11 +32,11 @@ public class Substract : MonoBehaviour, IPointerUpHandler
         {
             if (_scoreScript.Player_score < Sun_lose)
             {
-                Plants_script.can_plants = false;
+                Plants_script.CanPlants = false;
             }
             else
             {
-                Plants_script.can_plants = true;
+                Plants_script.CanPlants = true;
                 _scoreScript.Player_score -= Sun_lose;
                 _scoreScript.Txt_score.text = _scoreScript.Player_score.ToString();
             }

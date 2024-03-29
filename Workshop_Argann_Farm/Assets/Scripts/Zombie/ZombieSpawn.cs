@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Script that manages the appearance of zombies on the right of the screen
 /// </summary>
-public class Zombie_spawn : MonoBehaviour
+public class ZombieSpawn : MonoBehaviour
 {
     /// <summary>
     /// List of different zombie prefabs.

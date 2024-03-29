@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Script that manages the spawn of suns in the game.
 /// </summary>
-public class Sun_Spawn : MonoBehaviour
+public class SunSpawn : MonoBehaviour
 {
     /// <summary>
     /// Prefab of the gameObject Sun
@@ -14,10 +14,10 @@ public class Sun_Spawn : MonoBehaviour
     private GameObject _sunPrefab;
 
     /// <summary>
-    /// Links to the Sun_Manager script.
+    /// Links to the SunManager script.
     /// </summary>
     [SerializeField]
-    private Sun_Manager _manager;
+    private SunManager _manager;
 
     /// <summary>
     /// Links to the Score script.
@@ -34,7 +34,7 @@ public class Sun_Spawn : MonoBehaviour
 
     private void Start()
     {
-        _manager = FindObjectOfType<Sun_Manager>();
+        _manager = FindObjectOfType<SunManager>();
         _script_Score = _manager._scriptScore;
         _txt_score = _script_Score.Txt_score;
         StartCoroutine(Sunny());
@@ -53,7 +53,7 @@ public class Sun_Spawn : MonoBehaviour
             new_sun.transform.position = gameObject.transform.position;
             new_sun.AddComponent<Score>();
             new_sun.GetComponent<Score>().Txt_score = _txt_score;
-            new_sun.GetComponent<Sun_Interact>().Score_Sun = _script_Score;
+            new_sun.GetComponent<SunInteract>().Score_Sun = _script_Score;
         }
     }
 }

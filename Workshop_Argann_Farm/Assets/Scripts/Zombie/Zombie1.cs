@@ -3,8 +3,8 @@
 /// <summary>
 /// Script that allows you to create a Scriptable Object of zombies.
 /// </summary>
-[CreateAssetMenu(fileName = "Zombie_1", menuName = "Zombie", order = 1)]
-public class Zombie_1 : ScriptableObject
+[CreateAssetMenu(fileName = "Zombie1", menuName = "Zombie", order = 1)]
+public class Zombie1 : ScriptableObject
 {
     /// <summary>
     /// Set the speed of the zombie

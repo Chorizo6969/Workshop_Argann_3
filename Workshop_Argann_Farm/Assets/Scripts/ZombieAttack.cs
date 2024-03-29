@@ -4,13 +4,13 @@ using UnityEngine;
 /// <summary>
 /// Script that manages the behavior of zombies during an encounter with 1 plant.
 /// </summary>
-public class Zombie_attack : MonoBehaviour
+public class ZombieAttack : MonoBehaviour
 {
     /// <summary>
-    /// Links to th scripts Zombie_Manager
+    /// Links to th scripts ZombieManager
     /// </summary>
     [SerializeField]
-    private Zombie_Manager _zombie_move; // boolean which allows the zombie to move, if false then it no longer moves
+    private ZombieManager _zombie_move; // boolean which allows the zombie to move, if false then it no longer moves
 
     /// <summary>
     /// Collect the plant that the zombie touches
@@ -26,7 +26,7 @@ public class Zombie_attack : MonoBehaviour
     {
         if (collision.gameObject.tag != "Plante") return;
             _plants = collision.gameObject;
-            _pvPlants = collision.GetComponent<Entity_life>().Life;
+            _pvPlants = collision.GetComponent<EntityLife>().Life;
             StartCoroutine(Attack());
     }
 
@@ -41,7 +41,7 @@ public class Zombie_attack : MonoBehaviour
         {
             yield return new WaitForSeconds (1);
             _pvPlants -= 2;
-            _plants.GetComponent<Entity_life>().Life = _pvPlants;
+            _plants.GetComponent<EntityLife>().Life = _pvPlants;
         }
         _zombie_move._can_move = true;
     }

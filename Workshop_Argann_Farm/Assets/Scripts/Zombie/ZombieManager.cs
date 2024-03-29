@@ -3,13 +3,13 @@
 /// <summary>
 /// Script that manages zombie behavior. It manages the life of zombies as well as their movement.
 /// </summary>
-public class Zombie_Manager : MonoBehaviour
+public class ZombieManager : MonoBehaviour
 {
     /// <summary>
     /// Link to Scriptable Object Zombie
     /// </summary>
     [SerializeField]
-    private Zombie_1 _zombie;
+    private Zombie1 _zombie;
 
     /// <summary>
     /// SpriteRenderer of the gameObject carrying the script in order to change its appearance

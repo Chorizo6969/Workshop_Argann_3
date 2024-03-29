@@ -3,7 +3,7 @@
 /// <summary>
 /// Script that manages the interaction between the mouse and the suns.
 /// </summary>
-public class Sun_Interact : MonoBehaviour
+public class SunInteract : MonoBehaviour
 {
     /// <summary>
     /// Links to the Score script.

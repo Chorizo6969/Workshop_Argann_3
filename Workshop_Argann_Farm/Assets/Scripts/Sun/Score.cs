@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -18,6 +19,8 @@ public class Score : MonoBehaviour
     [field: SerializeField]
     public int Player_score { get; set; }
 
+    public event Action<int> OnScoreChanged;
+
     /// <summary>
     /// Function that is activated when you click on a sun
     /// </summary>
@@ -25,6 +28,7 @@ public class Score : MonoBehaviour
     public void CollectSun(GameObject sun)
     {
         Player_score += 50;
+        OnScoreChanged?.Invoke(Player_score);
         Txt_score.text = Player_score.ToString();
         Destroy(sun);
     }

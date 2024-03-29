@@ -3,7 +3,7 @@
 /// <summary>
 /// Script that manages plant life.
 /// </summary>
-public class Entity_life : MonoBehaviour
+public class EntityLife : MonoBehaviour
 {
     /// <summary>
     /// Int which defines the number of HP a plant has.

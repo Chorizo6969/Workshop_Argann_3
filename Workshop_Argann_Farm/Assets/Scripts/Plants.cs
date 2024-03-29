@@ -10,7 +10,7 @@ public class Plants : MonoBehaviour, IPointerDownHandler, IPointerUpHandler  // 
     /// Boolean which allows you to check if the player can plant a plant.
     /// </summary>
     [field: SerializeField]
-    public bool can_plants { get; set; } = false;
+    public bool CanPlants { get; set; } = false;
 
     /// <summary>
     /// Plant prefab
@@ -26,7 +26,7 @@ public class Plants : MonoBehaviour, IPointerDownHandler, IPointerUpHandler  // 
     /// <summary>
     /// Boolean that checks if the player is currently dragging the plant
     /// </summary>
-    private bool _isDragging = false;
+    private bool _isDragging;
 
     /// <summary>
     /// Vector 2 which determines the position where the plant can be placed
@@ -42,7 +42,7 @@ public class Plants : MonoBehaviour, IPointerDownHandler, IPointerUpHandler  // 
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (!can_plants) return;
+        if (!CanPlants) return;
             _isDragging = true;
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _spawnPosition = mousePosition;
